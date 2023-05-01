@@ -138,10 +138,22 @@
         form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const formData = new FormData(form);
+    // const response = await fetch("http://localhost:8080/image_processing", {
+    //     method: "POST",
+    //     body: formData
+    // });
+    // const response = await fetch("http://127.0.0.1:31969/image_processing", {
+    //     method: "POST",
+    //     body: formData
+    // });
+
     const response = await fetch("http://127.0.0.1:5010/image_processing", {
-        method: "POST",
-        body: formData
-    });
+    method: "POST",
+    body: formData
+});
+
+
+
     const result = await response.json();
     if (result.error) {
         alert(result.error);

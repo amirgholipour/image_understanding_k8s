@@ -31,7 +31,7 @@ COPY model.py /app/model.py
 COPY app.py /app/app.py
 RUN rm -rf /tmp/*
 # Expose the port the app runs on
-EXPOSE 5000
+EXPOSE 5010
 
 # Start the application
 CMD ["python", "app.py"]
