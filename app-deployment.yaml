@@ -17,6 +17,3 @@ spec:
         image: saeedkasmani/image-understanding-app:latest
         ports:
         - containerPort: 5010
-
-
-
